@@ -1,0 +1,94 @@
+.flex-box{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.text-container{
+    height: 35vh;
+    text-align: center;
+}
+
+
+
+.svg-container{
+    width: 100%;
+    height: 100%;
+    /* flex-grow:1; */
+}
+
+.svg{
+    width: 100%;
+    height: 35%;
+    margin-top: 15vh;
+
+}
+
+.rotate{
+    animation: spin1 5s infinite linear;
+}
+
+.button{
+    background-color: #f1492f;
+    margin: 0 auto;
+    border-radius: 30px;
+    margin-bottom: 70px;
+    width: fit-content;
+    height: fit-content;
+    transition-duration: 0.5s;
+    align-self: flex-end;
+
+  }
+@keyframes spin1 {
+    0% { transform: rotate(0deg);}
+    100% { transform: rotate(360deg);}
+}
+
+  .button:hover{
+    background-color: #b1230d;
+    }
+
+  .button:active{
+      background-color: #7a1808;
+      transition-duration: 0s;
+
+      box-shadow: 4px 4px #2e090360;
+  }
+
+ 
+
+  .button-text{
+      color: white;
+      padding: 10px 100px;
+      font-size: 1.5em;  
+      margin: 0;
+  }
+
+  .noselect {
+    -webkit-touch-callout: none; /* iOS Safari */
+      -webkit-user-select: none; /* Safari */
+       -khtml-user-select: none; /* Konqueror HTML */
+         -moz-user-select: none; /* Firefox */
+          -ms-user-select: none; /* Internet Explorer/Edge */
+              user-select: none; /* Non-prefixed version, currently
+                                    supported by Chrome and Opera */
+  }
+
+  .input{
+      width: 290px;
+      height: 60px;
+      border-radius: 30px;
+      margin: 10px auto;
+      outline: none;
+      border: none;
+      font-size: 1.5em;
+      text-align: center;
+      font-weight: bold;
+      color: gray;
+  }
+
+  ::placeholder{
+      color: lightgray;
+  }

@@ -1,0 +1,46 @@
+<div (document:mousemove)=" mouseMove($event)" class='flex-box'> 
+
+  <div class="text-container">
+    <h1 class="text-title">Feel like hotdog?</h1>
+    <h2 class="text-sub-title">Feel like hotdog?</h2>
+  </div>
+  <div class="svg-container"  (window:resize)="resize()">
+    <svg class="svg " id="svg">
+      <rect (document:mousedown)="mouseDown()" (document:mouseup)="mouseUp()"
+         
+         style="fill:#f2ae31;fill-opacity:1;;stroke:none;stroke-width:0.42401206;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="rect815"
+         width="160px"
+         height="44.801723"
+         x="40%"
+         [attr.y]="topY"
+         ry="22.400862" />
+      <rect
+      
+         ry="18.158617"
+         x="25%"
+         [attr.y]="sausageY"
+         [attr.transform]="sausageRotation"
+         height="36.317234"
+         width="50%"
+         id="rect828"
+         style="fill:#f1492f;fill-opacity:1;stroke:none;stroke-width:0.44624513;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <rect
+         style="fill:#f2ae31;fill-opacity:1;stroke:none;stroke-width:0.45214397;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="rect830"
+         width="160px"
+         height="48.195518"
+         x="40%"
+         [attr.y]="bottomY"
+         ry="24.097759" /> 
+    </svg>  
+   
+  </div>
+
+  <input type="text" class="input" placeholder="address">
+  <div class='button'>
+    <p class='button-text noselect'>Submit</p> 
+  </div>
+  
+  
+</div>
